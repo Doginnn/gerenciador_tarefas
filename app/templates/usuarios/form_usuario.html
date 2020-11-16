@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load meus_filtros %}
+
+{% block conteudo %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+        {{ form_usuario.username.errors }}
+        <label> Nome de Usuário: </label>
+        {{ form_usuario.username|addclass:'form-control' }}
+    </div>
+
+    <div class="form-group">
+        {{ form_usuario.password1.errors }}
+        <label> Senha: </label>
+        {{ form_usuario.password1|addclass:'form-control' }}
+    </div>
+
+    <div class="form-group">
+        {{ form_usuario.password2.errors }}
+        <label> Repita a Senha: </label>
+        {{ form_usuario.password2|addclass:'form-control' }}
+    </div>
+
+    <div class="form-group">
+        <input class="btn btn-success mb-3" type="submit" value="Salvar">
+    </div>
+</form>
+{% endblock conteudo %}

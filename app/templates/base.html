@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'app/css/bootstrap.min.css' %}"> <!-- Carrega o CSS -->
+    <title>Gerenciador de Tarefas</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">Gerenciador de Tarefas</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'cadastrar_tarefa' %}">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'listar_tarefas' %}">Listar Tarefas</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'deslogar_usuario' %}">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="col-md-2 d-none d-md-block bg-dark sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item active">
+                <a class="nav-link active" href="{% url 'cadastrar_tarefa' %}">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'listar_tarefas' %}">Listar Tarefas</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'deslogar_usuario' %}">Logout</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">teste1</a>
+              </li>
+              <li class="nav-item disabled">
+                <a class="nav-link" href="#">teste2</a>
+              </li>
+              <li class="nav-item disabled">
+                <a class="nav-link" href="#">teste3</a>
+              </li>
+              <li class="nav-item disabled">
+                <a class="nav-link" href="#">teste4</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    <main class="container">
+    {% block conteudo %}
+
+    {% endblock conteudo %}
+    </main>
+</body>
+</html>
