@@ -14,7 +14,7 @@ Projeto independente open-source desenvolvido em Python 3 no Ubuntu/Linux 20.04L
 
 ## Instalação:
 
-1. Instalar Virtualenv ([Pypa](https://virtualenv.pypa.io/en/latest/installation.html))
+1. Instalar e ativar Virtualenv ([Pypa](https://virtualenv.pypa.io/en/latest/installation.html))
 
 2. Instalar dependências:
 
@@ -22,12 +22,7 @@ Projeto independente open-source desenvolvido em Python 3 no Ubuntu/Linux 20.04L
     pip install -r requirements.txt
     ```
 
-3. Gere um `.env` local
-
-    ```bash
-    python contrib/env_gen.py
-    ```
-
+3. Instalar o MySQL e criar uma nova `"database"` com o nome do projeto, nesse caso `"gerenciador_tarefas".`
 
 4. Sincronize a base de dados:
 
@@ -35,13 +30,13 @@ Projeto independente open-source desenvolvido em Python 3 no Ubuntu/Linux 20.04L
     python manage.py migrate
     ```
 
-5. Crie um usuário (Administrador do sistema):
+5. Crie um usuário (Administrador do sistema): Nesse caso o meu Usuário ADM é `"teste"` e Senha ADM é `"123Teste!"`, não esqueça de configurar esse usuário e senha lá em `settings.py`>>`DATABASES`.
 
     ```bash
     python manage.py createsuperuser
     ```
 
-6. Teste a instalação carregando o servidor de desenvolvimento (http://localhost:8000 no navegador):
+6. Teste a instalação carregando o servidor de desenvolvimento (http://127.0.0.1:8000/ no navegador):
 
     ```bash
     python manage.py runserver
@@ -49,30 +44,21 @@ Projeto independente open-source desenvolvido em Python 3 no Ubuntu/Linux 20.04L
 
 ## Implementações
 
-- Cadastro de produtos, clientes, empresas, fornecedores e transportadoras
 - Login/Logout
-- Criação de perfil para cada usuário.
-- Definição de permissões para usuários.
-- Criação e geração de PDF para orçamentos e pedidos de compra/venda
-- Módulo financeiro (Plano de Contas, Fluxo de Caixa e Lançamentos)
-- Módulo para controle de estoque
-- Módulo fiscal:
-    - Geração e armazenamento de notas fiscais
-    - Validação do XML de NF-e/NFC-es
-    - Emissão, download, consulta e cancelamento de NF-e/NFC-es **(Testar em ambiente de homologação)**
-    - Comunicação com SEFAZ (Consulta de cadastro, inutilização de notas, manifestação do destinatário)
+- Tarefas
+    - Criar
+    - Alterar
+    - Remover
 - Interface simples e em português
 
 ## Créditos
 
-- [AdminBSBMaterialDesign](https://github.com/gurayyarar/AdminBSBMaterialDesign)
-- [geraldo](https://github.com/marinho/geraldo)
-- [jQuery-Mask-Plugin](https://igorescobar.github.io/jQuery-Mask-Plugin/)
-- [DataTables](https://datatables.net/)
-- [JQuery multiselect](http://loudev.com/)
+- [Diógenes Dantas](https://github.com/Doginnn)
 
 ## Ajuda
 
-Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/thiagopena/djangoSIGE/issues) ou via email thiagopena01@gmail.com
+Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/Doginnn/gerenciador_tarefas/issues) ou via email diogenesemmanuel@gmail.com
 
-Como este é um projeto em desenvolvimento, qualquer feedback será bem-vindo.
+Esse é um projeto em constante desenvolvimento, qualquer ajuda será bem vinda, inclusive Feedbacks.
+
+Esse projeto está licenciado com a licença permitiva MIT. Para mais informações sobre licenças clique [AQUI](http://escolhaumalicenca.com.br/)
