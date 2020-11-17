@@ -14,13 +14,13 @@ Projeto independente open-source desenvolvido em Python 3 no Ubuntu/Linux 20.04L
 
 ## Instalação:
 
-1. Instalar dependências:
+1. Instalar Virtualenv ([Pypa](https://virtualenv.pypa.io/en/latest/installation.html))
+
+2. Instalar dependências:
 
     ```bash
     pip install -r requirements.txt
     ```
-
-2. Edite o conteúdo do arquivo **djangosige/configs/configs.py**
 
 3. Gere um `.env` local
 
