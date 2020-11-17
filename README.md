@@ -1,20 +1,16 @@
 # GERENCIADOR DE TAREFAS
 
-# DjangoSIGE [![Build Status](https://travis-ci.org/thiagopena/djangoSIGE.svg?branch=master)](https://travis-ci.org/thiagopena/djangoSIGE)
+# [DiTarefas](https://github.com/Doginnn/gerenciador_tarefas)
 
-Sistema Integrado de Gestão Empresarial baseado em Django
+Sistema Integrado de Gerenciamento de Tarefas baseado em Python, Django e Bootstrap
 
-Projeto independente open-source desenvolvido em Python 3 no Windows, testado no GNU/Linux e Windows.
+Projeto independente open-source desenvolvido em Python 3 no Ubuntu/Linux 20.04LTS Focal Fossa, não testado no Windows mas deve rodar sem problemas ;)
 
 
 ## Dependências
 
-- [Python](https://www.python.org/downloads/) - Versão 3.5+
-- [django](http://www.djangoproject.com) == 2.1.3
-- [geraldo](https://github.com/thiagopena/geraldo) - Geração de PDF para pedidos de venda/compra
-- [PySIGNFe](https://github.com/thiagopena/PySIGNFe) (Opcional) - Necessário para a geração de NF-e, NFC-e, comunicação com SEFAZ, geração do DANFE, etc.
-- [apache2](https://www.apache.org/) (Opcional)
-- [mod_wsgi](https://modwsgi.readthedocs.io/en/develop/) (Opcional)
+- [Python](https://www.python.org/downloads/) - Versão 3.8
+- [django](http://www.djangoproject.com) - 3.1
 
 ## Instalação:
 
