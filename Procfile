@@ -1,1 +1,1 @@
-web: gunicorn ditarefas.wsgi
+web: gunicorn gerenciador_tarefas.wsgi
