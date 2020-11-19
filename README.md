@@ -49,6 +49,10 @@ Projeto independente open-source desenvolvido em Python 3 no Ubuntu/Linux 20.04L
     - Criar
     - Alterar
     - Remover
+- Usuário
+    - Criar
+    - Alterar
+    - Remover
 - Interface simples e em português
 
 ## Créditos
